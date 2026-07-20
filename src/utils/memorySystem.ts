@@ -6,8 +6,7 @@ export function daysSinceReview(neuron: Neuron): number {
 
     const diff = now - neuron.lastReview;
 
-    return diff / 10000;
-    //return diff / (1000 * 60 * 60 * 24);
+    return diff / (1000 * 60 * 60 * 24);
 
 }
 
